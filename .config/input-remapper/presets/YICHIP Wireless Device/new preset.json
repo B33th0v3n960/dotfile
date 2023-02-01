@@ -1,0 +1,16 @@
+{
+    "mapping": {
+        "1,100,1": [
+            "Control_R",
+            "keyboard"
+        ],
+        "1,54,1+1,58,1": [
+            "Caps_Lock",
+            "keyboard"
+        ],
+        "1,58,1": [
+            "Escape",
+            "keyboard"
+        ]
+    }
+}

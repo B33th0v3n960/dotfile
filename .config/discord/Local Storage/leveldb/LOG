@@ -1,0 +1,6 @@
+2023/02/01-18:50:33.873 3a5f Reusing MANIFEST /home/b33th0v3n/.config/discord/Local Storage/leveldb/MANIFEST-000001
+2023/02/01-18:50:33.875 3a5f Recovering log #10
+2023/02/01-18:50:33.917 3a5f Reusing old log /home/b33th0v3n/.config/discord/Local Storage/leveldb/000010.log 
+2023/02/01-18:59:44.793 3a5f Level-0 table #14: started
+2023/02/01-18:59:44.865 3a5f Level-0 table #14: 1360899 bytes OK
+2023/02/01-18:59:44.899 3a5f Delete type=0 #10
