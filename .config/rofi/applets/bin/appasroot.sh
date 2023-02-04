@@ -34,15 +34,15 @@ fi
 # Options
 layout=`cat ${theme} | grep 'USE_ICON' | cut -d'=' -f2`
 if [[ "$layout" == 'NO' ]]; then
-	option_1=" Alacritty"
-	option_2=" Thunar"
-	option_3=" Input"
+	option_1=" Input"
+	option_2=" Alacritty"
+	option_3=" Thunar"
 	option_4=" Ranger"
 	option_5=" Vim"
 else
-	option_1=""
-	option_2=""
-	option_3=""
+	option_1=""
+	option_2=""
+	option_3=""
 	option_4=""
 	option_5=""
 fi
@@ -69,11 +69,11 @@ run_cmd() {
 	polkit_cmd="pkexec env PATH=$PATH DISPLAY=$DISPLAY XAUTHORITY=$XAUTHORITY"
 	# polkit_cmd="sudo"
 	if [[ "$1" == '--opt1' ]]; then
-		${polkit_cmd} kitty
-	elif [[ "$1" == '--opt2' ]]; then
-		${polkit_cmd} dbus-run-session thunar
-	elif [[ "$1" == '--opt3' ]]; then
     ${polkit_cmd} input-remapper-gtk
+	elif [[ "$1" == '--opt2' ]]; then
+		${polkit_cmd} kitty
+	elif [[ "$1" == '--opt3' ]]; then
+		${polkit_cmd} dbus-run-session thunar
 	elif [[ "$1" == '--opt4' ]]; then
 		${polkit_cmd} kitty -e ranger
 	elif [[ "$1" == '--opt5' ]]; then

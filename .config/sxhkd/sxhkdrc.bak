@@ -6,42 +6,26 @@
 super + Return
 	kitty
 
-#
-# rofi
-#
-
-# run launcher
+# program launcher
 super + @space
 	~/.config/rofi/launchers/type-1/launcher.sh
 
-# quicklinks
 super + shift  + @space
   ~/.config/rofi/applets/bin/quicklinks.sh
 
-# app as root
 super + alt + @space
   ~/.config/rofi/applets/bin/appasroot.sh
 
-# powermenu
 super + x 
   ~/.config/rofi/powermenu/type-2/powermenu.sh
 
-super + b 
-  hide -h
+# make sxhkd reload its configuration files:
+super + Escape
+	pkill -USR1 -x sxhkd
 
-super + u
-  hide -u
 #
 # bspwm hotkeys
 #
-
-# eyedropper
-super + p 
-  eyedropper
-
-# Speaker Volume control
-XF86Audio{RaiseVolume,LowerVolume}
-	volume{ --inc, --dec}
 
 # quit/restart bspwm
 super + alt + {q,r}
