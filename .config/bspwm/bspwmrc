@@ -17,6 +17,8 @@ polybar &
 polkit-dumb-agent &
 dunst &
 notify-send -u low "󰯉  welcome 󰯉 " &
+udiskie &
+udisksctl mount -b /dev/sda1 &
 
 
 bspc monitor HDMI-1 -d   󰈹   ﭮ 
@@ -31,3 +33,5 @@ bspc config borderless_monocle   true
 bspc config gapless_monocle      true
 
 bspc rule -a firefox desktop='^3' follow=on
+bspc rule -a discord desktop='^4' follow=on
+

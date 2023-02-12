@@ -30,12 +30,12 @@ fi
 # Options
 layout=`cat ${theme} | grep 'USE_ICON' | cut -d'=' -f2`
 if [[ "$layout" == 'NO' ]]; then
-	option_1=" Google"
-	option_2=" Gmail"
+	option_1=" Gmail"
+	option_2=" Outlook"
 	option_3=" Youtube"
 	option_4=" Github"
 	option_5=" Reddit"
-	option_6=" Twitter"
+	option_6=" nerdfonts"
 else
 	option_1=""
 	option_2=""
@@ -65,7 +65,7 @@ run_rofi() {
 # Execute Command
 run_cmd() {
 	if [[ "$1" == '--opt1' ]]; then
-		xdg-open 'https://www.google.com/'
+		xdg-open 'https://mail.google.com/'
 	elif [[ "$1" == '--opt2' ]]; then
 		xdg-open 'https://outlook.office365.com/'
 	elif [[ "$1" == '--opt3' ]]; then

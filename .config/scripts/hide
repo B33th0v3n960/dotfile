@@ -13,7 +13,8 @@ function hide() {
 
 function unhide() {
 	
-		polybar-msg cmd show | bspc config top_padding 40  
+		# polybar-msg cmd show | bspc config top_padding 40  
+		polybar-msg cmd show  
 		
 }
 

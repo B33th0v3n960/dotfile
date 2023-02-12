@@ -40,7 +40,7 @@ if [[ "$layout" == 'NO' ]]; then
 	option_4=" Ranger"
 	option_5=" Vim"
 else
-	option_1=""
+ 	option_1=""
 	option_2=""
 	option_3=""
 	option_4=""
