@@ -12,12 +12,15 @@ fi
 
 nitrogen --restore &
 sxhkd &
+setxkbmap -option "ctrl:swap_ralt_rctl" &
+setxkbmap -option "caps:escape_shifted_capslock" &
 picom &
 polybar &
 polkit-dumb-agent &
 dunst &
 notify-send -u low "󰯉  welcome 󰯉 " &
 udiskie &
+mpd &
 udisksctl mount -b /dev/sda1 &
 
 
@@ -26,12 +29,13 @@ bspc monitor HDMI-2 -d 󰯉  
 
 
 bspc config border_width         0
-bspc config window_gap           9
+bspc config window_gap          10 
 
 bspc config split_ratio          0.52
 bspc config borderless_monocle   true
 bspc config gapless_monocle      true
 
+bspc rule -a inkscape desktop="^1" follow=on
 bspc rule -a firefox desktop='^3' follow=on
 bspc rule -a discord desktop='^4' follow=on
 

@@ -67,7 +67,8 @@ run_rofi() {
 # Screenshot
 time=`date +%Y-%m-%d-%H-%M-%S`
 geometry=`xrandr | grep 'current' | head -n1 | cut -d',' -f2 | tr -d '[:blank:],current'`
-dir="`xdg-user-dir PICTURES`/Screenshots"
+# dir="`xdg-user-dir PICTURES`/Screenshots"
+dir="/home/b33th0v3n/Pictures/screenshots"
 file="Screenshot_${time}_${geometry}.png"
 
 if [[ ! -d "$dir" ]]; then
@@ -78,7 +79,7 @@ fi
 notify_view() {
 	notify_cmd_shot='dunstify -u low --replace=699'
 	${notify_cmd_shot} "Copied to clipboard."
-	viewnior ${dir}/"$file"
+	nsxiv ${dir}/"$file"
 	if [[ -e "$dir/$file" ]]; then
 		${notify_cmd_shot} "Screenshot Saved."
 	else

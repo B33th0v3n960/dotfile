@@ -1,0 +1,9 @@
+set selection-clipboard clipboard
+
+set default-bg "#24273a"
+set inputbar-bg "#1e2030"
+set inputbar-fg "#a5adcb"
+set statusbar-bg "#1e2030"
+set statusbar-fg "#a5adcb"
+
+set font "FantasqueSansMono NFM normal 14"

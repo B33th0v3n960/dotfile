@@ -43,6 +43,11 @@ super + p
 XF86Audio{RaiseVolume,LowerVolume}
 	volume{ --inc, --dec}
 
+# Take a screenshot
+Print
+	~/.config/rofi/applets/bin/screenshot.sh
+	
+
 # quit/restart bspwm
 super + alt + {q,r}
 	bspc {quit,wm -r}

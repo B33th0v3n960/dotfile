@@ -48,7 +48,8 @@ configuration {
 	/*---------- Run settings ----------*/
 	run-command: "{cmd}";
 	run-list-command: "";
-	run-shell-command: "{terminal} -e {cmd}";
+	/* run-shell-command: "{terminal} -e {cmd}"; */
+	run-shell-command: "kitty -e {cmd}";
 
 	/*---------- Fallback Icon ----------*/
 	run,drun {
