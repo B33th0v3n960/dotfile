@@ -1,13 +1,20 @@
 #! /bin/sh
-PATH="$HOME/.config/scripts:$PATH" 
+#
+#  ██████╗ ███████╗██████╗ ██╗    ██╗███╗   ███╗██████╗  ██████╗
+#  ██╔══██╗██╔════╝██╔══██╗██║    ██║████╗ ████║██╔══██╗██╔════╝
+#  ██████╔╝███████╗██████╔╝██║ █╗ ██║██╔████╔██║██████╔╝██║     
+#  ██╔══██╗╚════██║██╔═══╝ ██║███╗██║██║╚██╔╝██║██╔══██╗██║     
+#  ██████╔╝███████║██║     ╚███╔███╔╝██║ ╚═╝ ██║██║  ██║╚██████╗
+#  ╚═════╝ ╚══════╝╚═╝      ╚══╝╚══╝ ╚═╝     ╚═╝╚═╝  ╚═╝ ╚═════╝
+# 
 
-# export QT_QPA_PLATFORMTHEME="qt5ct"
+PATH="$HOME/.config/scripts:$PATH" 
 pgrep -x sxhkd > /dev/null || sxhkd &
 
-xrandr --output HDMI-1 --mode 1920x1080 --primary
+xrandr --output HDMI1 --mode 1920x1080 --primary
 
-if [[ $(xrandr -q |grep 'HDMI-2 connected') ]]; then 
-  xrandr --output HDMI-2 --mode 1920x1080 --below HDMI-1
+if [[ $(xrandr -q |grep 'HDMI2 connected') ]]; then 
+  xrandr --output HDMI2 --mode 1920x1080 --below HDMI1
 fi
 
 nitrogen --restore &
@@ -24,8 +31,8 @@ mpd &
 udisksctl mount -b /dev/sda1 &
 
 
-bspc monitor HDMI-1 -d   󰈹   ﭮ 
-bspc monitor HDMI-2 -d 󰯉   
+bspc monitor HDMI1 -d   󰈹   ﭮ 
+bspc monitor HDMI2 -d 󰯉   
 
 
 bspc config border_width         0

@@ -1,5 +1,10 @@
 #
-# ~/.zshrc
+#  ███████╗███████╗██╗  ██╗██████╗  ██████╗
+#  ╚══███╔╝██╔════╝██║  ██║██╔══██╗██╔════╝
+#    ███╔╝ ███████╗███████║██████╔╝██║     
+#   ███╔╝  ╚════██║██╔══██║██╔══██╗██║     
+#  ███████╗███████║██║  ██║██║  ██║╚██████╗
+#  ╚══════╝╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝
 #
 
 # If not running interactively, don't do anything
@@ -7,7 +12,6 @@
 
 
 bindkey -e
-
 export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 eval "$(starship init zsh)"
 source "$HOME/.dotfiles/.config/zsh/alias.zsh"

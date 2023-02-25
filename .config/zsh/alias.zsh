@@ -1,3 +1,11 @@
+#
+#   █████╗ ██╗     ██╗ █████╗ ███████╗███████╗███████╗
+#  ██╔══██╗██║     ██║██╔══██╗██╔════╝██╔════╝██╔════╝
+#  ███████║██║     ██║███████║███████╗█████╗  ███████╗
+#  ██╔══██║██║     ██║██╔══██║╚════██║██╔══╝  ╚════██║
+#  ██║  ██║███████╗██║██║  ██║███████║███████╗███████║
+#  ╚═╝  ╚═╝╚══════╝╚═╝╚═╝  ╚═╝╚══════╝╚══════╝╚══════╝
+#
 # exa aliases
 alias ls='exa -al --color=always --group-directories-first --icons'   # long format --all
 alias la='exa -a --color=always --group-directories-first --icons'     # all files and dirs
@@ -6,7 +14,6 @@ alias lt='exa -aT --color=always --group-directories-first --icons'    # tree li
 alias l.="exa -a | egrep '^\.'"        
 
 alias cls='clear && neofetch'
-# alias cls='clear && fig'
 alias suspend='systemctl suspend'
 
 # change directors
@@ -23,6 +30,7 @@ alias other="cd ~/Others/"
 alias media="cd ~/media/"
 alias trash="cd /.local/share/Trash"
 alias code="cd ~/Documents/code/"
+alias dotfile='cd ~/.dotfiles/'
 
 # applications
 alias view="nsxiv"
@@ -50,8 +58,8 @@ alias please='sudo'
 alias cleanup='sudo pacman -Rns (pacman -Qtdq)'
 
 alias pacman="sudo pacman"
-alias edit-alias="vim ~/.dotfiles/.config/zsh/alias.zsh"
+alias vi-alias="vim ~/.dotfiles/.config/zsh/alias.zsh"
 
 # temporary 
 alias maths="cd ~/Documents/code/maths/"
-alias fig="figlet -f ansi-shadow 'hello there' -t -c | lolcat"
+alias fig="figlet -f ansi-shadow"
