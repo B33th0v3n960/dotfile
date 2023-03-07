@@ -3,3 +3,10 @@
 .config/lazygit/
 .config/inkscape/
 .config/vlc/
+.config/FreeCAD/
+.config/dconf/
+.config/libfm/
+.config/libvirt/
+.config/pulse/
+.config/gtk*/
+.config/htop/
