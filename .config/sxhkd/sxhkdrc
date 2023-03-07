@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 #
 # wm independent hotkeys
 #
@@ -12,6 +13,9 @@ super + Return
 
 # run launcher
 super + @space
+	~/.config/rofi/launchers/type-1/launcher.sh
+
+XF86search
 	~/.config/rofi/launchers/type-1/launcher.sh
 
 # quicklinks
@@ -42,6 +46,13 @@ super + p
 # Speaker Volume control
 XF86Audio{RaiseVolume,LowerVolume}
 	volume{ --inc, --dec}
+
+XF86Audio{Mute,MicMute}
+	volume{ --toggle, --toggle-mic}
+
+# Music control
+XF86Audio{Next,Prev,Play,Stop}
+  pause{ next, prev, toggle, pause}
 
 # Take a screenshot
 Print

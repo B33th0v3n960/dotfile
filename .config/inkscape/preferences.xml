@@ -118,8 +118,8 @@
          id="rect"
          style="fill:blue;"
          usecurrent="1"
-         width="1506.86676855488"
-         height="373.00856118988" />
+         width="945.568578524865"
+         height="585.119148314467" />
       <eventcontext
          id="3dbox"
          style="stroke:none;stroke-linejoin:round;"
@@ -154,7 +154,9 @@
          style="fill:red;"
          end="0"
          start="0"
-         usecurrent="1" />
+         usecurrent="1"
+         rx="3.77952755905511"
+         ry="3.77952755905511" />
       <eventcontext
          id="star"
          magnitude="5"
@@ -313,7 +315,7 @@
        font_sample="AaBbCcIiPpQq12369$€¢?.;/()"
        show_sample_in_list="1"
        use_svg2="1"
-       style="fill:black;fill-opacity:1;line-height:1.25;stroke:none;font-family:sans-serif;font-style:normal;font-weight:normal;font-size:40px;"
+       style="line-height:1.25;font-family:sans-serif;font-size:16px"
        selcue="1" />
     <eventcontext
        id="nodes"
@@ -330,8 +332,8 @@
        live_outline="1"
        live_objects="1"
        show_helperpath="0"
-       x="851.93630094183"
-       y="688.382915230157"
+       x="316.59696"
+       y="387.00288"
        edit_clipping_paths="0"
        edit_masks="0" />
     <eventcontext
@@ -948,7 +950,7 @@
      org.inkscape.input.svg.scale="auto" />
   <group
      id="desktop"
-     style="fill:#000000;stroke-width:0.37795276;stroke:#000000;font-size:160px;-inkscape-font-specification:'Noto Sans Light';font-family:'Noto Sans';font-weight:300">
+     style="fill:#000000;stroke-width:1.13385827;stroke:#000000;font-size:17.33333333px;-inkscape-font-specification:'Noto Sans Light';font-family:'Noto Sans';font-weight:300">
     <group
        width="640"
        height="480"

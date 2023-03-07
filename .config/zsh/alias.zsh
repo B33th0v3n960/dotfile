@@ -7,11 +7,11 @@
 #  ╚═╝  ╚═╝╚══════╝╚═╝╚═╝  ╚═╝╚══════╝╚══════╝╚══════╝
 #
 # exa aliases
-alias ls='exa -al --color=always --group-directories-first --icons'   # long format --all
-alias la='exa -a --color=always --group-directories-first --icons'     # all files and dirs
-alias ll='exa -l --color=always --group-directories-first --icons'     # long format
-alias lt='exa -aT --color=always --group-directories-first --icons'    # tree listing
-alias l.="exa -a | egrep '^\.'"        
+alias ls='exa -al --color=always --group-directories-first --icons --sort=extension'   # long format --all
+alias la='exa -a --color=always --group-directories-first --icons --sort=extension'     # all files and dirs
+alias ll='exa -l --color=always --group-directories-first --icons --sort=extension'     # long format
+alias lt='exa -aT --color=always --group-directories-first --icons --sort=extension'    # tree listing
+alias l.="exa -a --sort=extension | egrep '^\.'"        
 
 alias cls='clear && neofetch'
 alias suspend='systemctl suspend'
@@ -23,14 +23,19 @@ alias ....='cd ../../..'
 alias .....='cd ../../../..'
 alias ......='cd ../../../../..'
 
+alias desk="cd ~/Desktop/"
 alias docs="cd ~/Documents/"
 alias pics="cd ~/Pictures/"
 alias down="cd ~/Downloads/"
+alias media="cd /media/"
 alias other="cd ~/Others/"
-alias media="cd ~/media/"
 alias trash="cd /.local/share/Trash"
-alias code="cd ~/Documents/code/"
 alias dotfile='cd ~/.dotfiles/'
+
+alias work='cd ~/Documents/work/'
+
+alias code="cd ~/Desktop/code/"
+alias react='cd ~/Desktop/code/learn-react/'
 
 # applications
 alias view="nsxiv"
@@ -41,12 +46,16 @@ alias fetch="neofetch"
 alias ncmpcpp='ncmpcpp -b .config/ncmpcpp/bindings'
 alias nc='ncmpcpp'
 alias mixer="pulsemixer"
+alias ncdu="ncdu --color dark"
+alias blue="bluetoothctl"
+alias list="lt --ignore-glob='node_modules'"
+alias fig="figlet -f ansi-shadow"
+alias mpc="mpc --host 127.0.0.1  -p 6600"
 
 # shorten commands
 alias mirror="sudo reflector -f 30 -l 30 --number 10 --verbose --save /etc/pacman.d/mirrorlist"
 alias ip='ip -color'
 alias grubup="sudo update-grub"
-
 
 alias dir='dir --color=auto'
 alias vdir='vdir --color=auto'
@@ -61,5 +70,3 @@ alias pacman="sudo pacman"
 alias vi-alias="vim ~/.dotfiles/.config/zsh/alias.zsh"
 
 # temporary 
-alias maths="cd ~/Documents/code/maths/"
-alias fig="figlet -f ansi-shadow"
