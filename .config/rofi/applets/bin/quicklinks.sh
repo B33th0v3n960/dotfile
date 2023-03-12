@@ -33,19 +33,19 @@ layout=`cat ${theme} | grep 'USE_ICON' | cut -d'=' -f2`
 if [[ "$layout" == 'NO' ]]; then
 	option_1=" Gmail"
 	option_2=" Outlook"
-	option_3=" Youtube"
+	option_3=" Codeberg"
 	option_4=" Github"
 	option_5=" Reddit"
-	option_6=" nerdfonts"
+	option_6=" Youtube"
 	option_7=" archlinux"
   option_8=" monkeytype"
 else
 	option_1=""
 	option_2=""
-	option_3=""
+	option_3=""
 	option_4=""
 	option_5=""
-	option_6=""
+	option_6=""
 	option_7=""
   option_8=""
 fi
@@ -74,13 +74,13 @@ run_cmd() {
 	elif [[ "$1" == '--opt2' ]]; then
 		xdg-open 'https://outlook.office365.com/'
 	elif [[ "$1" == '--opt3' ]]; then
-		xdg-open 'https://www.youtube.com/'
+		xdg-open 'https://codeberg.org/'
 	elif [[ "$1" == '--opt4' ]]; then
 		xdg-open 'https://www.github.com/B33th0v3n960/'
 	elif [[ "$1" == '--opt5' ]]; then
 		xdg-open 'https://www.reddit.com/r/unixporn'
 	elif [[ "$1" == '--opt6' ]]; then
-		xdg-open 'https://www.nerdfonts.com/cheat-sheet'
+		xdg-open 'https://www.youtube.com/'
 	elif [[ "$1" == '--opt7' ]]; then
 		xdg-open 'https://www.archlinux.org'
 	elif [[ "$1" == '--opt8' ]]; then
