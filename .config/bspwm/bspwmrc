@@ -31,7 +31,7 @@ mpd &
 udisksctl mount -b /dev/sda1 &
 
 
-bspc monitor HDMI1 -d   󰈹   ﭮ 
+bspc monitor HDMI1 -d   󰈹   ﭮ 1 2 
 bspc monitor HDMI2 -d 󰯉   
 
 
