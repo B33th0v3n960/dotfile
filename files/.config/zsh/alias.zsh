@@ -28,12 +28,11 @@ alias docs="cd ~/Documents/"
 alias pics="cd ~/Pictures/"
 alias down="cd ~/Downloads/"
 alias media="cd /media/"
-alias other="cd ~/Others/"
+alias other="cd ~/media/eternal-hdd/Others/"
 alias trash="cd /.local/share/Trash"
-alias dotfile='cd ~/.dotfiles/'
+alias dotfile='cd ~/.local/dotfiles/'
 
 alias work='cd ~/Documents/work/'
-
 alias code="cd ~/Desktop/code/"
 alias chess='cd ~/Desktop/code/chess-tournament-sorting/'
 alias note='cd ~/Documents/notes/'
@@ -53,7 +52,8 @@ alias list="lt --ignore-glob='node_modules|.git'"
 alias fig="figlet -f ansi-shadow"
 alias mpc="mpc --host 127.0.0.1  -p 6600"
 alias git-diff='git difftool --tool=nvimdiff'
-alias minecraft='sudo java -jar ~/Others/TLauncher-2.876.jar'
+alias vi-alias="vim ~/.local/dotfile/files/.config/zsh/alias.zsh"
+alias clean='latexmk -c && rm **.synctex.gz'
 
 # shorten commands
 alias mirror="sudo reflector -f 30 -l 30 --number 10 --verbose --save /etc/pacman.d/mirrorlist"
@@ -70,6 +70,5 @@ alias please='sudo'
 alias cleanup='sudo pacman -Rns (pacman -Qtdq)'
 
 alias pacman="sudo pacman"
-alias vi-alias="vim ~/.dotfiles/.config/zsh/alias.zsh"
 
 # temporary 
