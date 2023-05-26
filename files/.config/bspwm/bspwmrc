@@ -17,12 +17,12 @@ if [[ $(xrandr -q |grep 'HDMI2 connected') ]]; then
   xrandr --output HDMI2 --mode 1920x1080 --below HDMI1
 fi
 
+polkit-dumb-agent &
 mpd &
 udiskie &
 picom &
 polybar &
 nitrogen --restore &
-polkit-dumb-agent &
 dunst &
 notify-send -u low "󰯉  welcome 󰯉 " &
 systemctl --user start wireplumber pipewire-pulse &

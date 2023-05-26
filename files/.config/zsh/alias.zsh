@@ -27,15 +27,22 @@ alias desk="cd ~/Desktop/"
 alias docs="cd ~/Documents/"
 alias pics="cd ~/Pictures/"
 alias down="cd ~/Downloads/"
-alias media="cd /media/"
-alias other="cd ~/media/eternal-hdd/Others/"
 alias trash="cd /.local/share/Trash"
-alias dotfile='cd ~/.local/dotfiles/'
+alias dotfile='cd ~/.local/dotfile/'
 
 alias work='cd ~/Documents/work/'
 alias code="cd ~/Desktop/code/"
 alias chess='cd ~/Desktop/code/chess-tournament-sorting/'
 alias note='cd ~/Documents/notes/'
+
+# external media
+alias media="cd /media/"
+alias sd="cd /media/sd/"
+alias ihdd="cd /media/internal-hdd/files/"
+alias ehdd="cd /media/external-hdd/files/"
+alias usb="cd /media/usb/files/"
+alias windows="cd /media/windows/"
+alias other="cd /media/internal-hdd/files/Others/"
 
 # applications
 alias view="nsxiv"
@@ -54,6 +61,7 @@ alias mpc="mpc --host 127.0.0.1  -p 6600"
 alias git-diff='git difftool --tool=nvimdiff'
 alias vi-alias="vim ~/.local/dotfile/files/.config/zsh/alias.zsh"
 alias clean='latexmk -c && rm **.synctex.gz'
+alias s="kitty +kitten ssh"
 
 # shorten commands
 alias mirror="sudo reflector -f 30 -l 30 --number 10 --verbose --save /etc/pacman.d/mirrorlist"
