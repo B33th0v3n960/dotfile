@@ -1,0 +1,6 @@
+polkit-dumb-agent & 
+udiskie & 
+waybar & 
+systemctl start --user wireplumber pipewire-pulse &
+udisksctl mount -b /dev/sda1 &
+udisksctl mount -b /dev/nvme0n1p5 &

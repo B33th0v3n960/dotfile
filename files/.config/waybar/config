@@ -1,0 +1,87 @@
+{
+    "gtk-layer-shell": false,
+    "modules-left": ["custom/launcher","custom/separator", "wlr/workspaces"],
+    "modules-right": [
+        "cpu", 
+        // "custom/separator",
+        // "temperature",
+        "custom/separator",
+        "memory", 
+        "custom/separator",
+        "pulseaudio",
+        "custom/separator",
+        "network",
+        "custom/separator",
+        "clock",
+        ],
+
+    // Modules configuration
+    "custom/launcher": {
+        // "format": "異",
+        "format": "󰮯",
+        "on-click":"/home/b33th0v3n/.config/rofi/launchers/type-1/launcher.sh",
+    },
+    "wlr/workspaces": {
+        "format":"{icon}",
+        "sort-by-name": true,
+        "on-scroll-up": "hyprctl dispatch workspace e+1",
+        "on-scroll-down": "hyprctl dispatch workspace e-1",
+        "on-click": "activate",
+        // "format-icons": ["", "", ""]
+        // "sort-by-coordinates": true
+    },
+    "custom/separator": {
+        "format": "|",
+        "interval": "once",
+        "tooltip": false
+    },
+    "clock": {
+        // "format": " {time}", 
+        "format": "{:%H:%M}",
+        "format-alt": "{:%H:%M %a %Y-%m-%d}",
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+        "interval": 1
+    },
+    "cpu": {
+        "format": " &#8239;{usage}%",
+        "tooltip": false,
+        "on-click": "kitty procs --sortd cpu --watch-interval 2"
+    },
+    "memory": {
+        "format": " {}%"
+    },
+    "temperature": {
+        "critical-threshold": 80,
+        "format": "{icon}&#8239;{temperatureC}°C",
+        "format-icons": ["", "", ""]
+    },
+    "network": {
+        // "interface": "wlp2*", // (Optional) To force the use of this interface
+        "format-wifi": " &#8239;{essid}",
+        // "format-wifi": " &#8239;{essid} ({signalStrength}%)",
+        "format-ethernet": "&#8239;{ifname}: {ipaddr}/{cidr}",
+        "format-linked": "&#8239;{ifname} (No IP)",
+        "format-disconnected": "✈&#8239;Disconnected",
+        "format-alt": "{ifname}: {ipaddr}/{cidr}"
+    },
+    "pulseaudio": {
+        // "scroll-step": 1, // %, can be a float
+        // "format": "{icon}&#8239;{volume}% {format_source}",
+        //"format-bluetooth": "{volume}% {icon} {format_source}",
+        //"format-bluetooth-muted": "🔈 {icon} {format_source}",
+        //"format-muted": "🔈&#8239;0% {format_source}",
+        // "format-source": "🔈&#8239;{volume}%",
+        "format": " &#8239;{volume}%",
+        "format-source-muted": "",
+        "format-icons": {
+            "headphone": "💡",
+            "hands-free": "🔈",
+            "headset": "🔈",
+            "phone": "",
+            "portable": "",
+            "car": "",
+            "default": ["🔈", "🔈", "🔈"]
+        },
+        // "on-click": "pavucontrol"
+    },
+}
