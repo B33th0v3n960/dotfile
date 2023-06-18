@@ -1,0 +1,2 @@
+udisksctl mount -b /dev/sda1 &
+udisksctl mount -b /dev/nvme0n1p5 &

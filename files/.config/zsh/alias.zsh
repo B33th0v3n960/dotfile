@@ -7,9 +7,10 @@
 #  ╚═╝  ╚═╝╚══════╝╚═╝╚═╝  ╚═╝╚══════╝╚══════╝╚══════╝
 #
 # exa aliases
-alias ls='exa -al --color=always --group-directories-first --icons --sort=extension --git --git-ignore'   # long format --all
+alias ll='exa -al --color=always --group-directories-first --icons --sort=extension --git --git-ignore'   # long format --all
+alias lla='exa -al --color=always --group-directories-first --icons --sort=extension --git'   # long format --all
 alias la='exa -a --color=always --group-directories-first --icons --sort=extension '     # all files and dirs
-alias ll='exa -l --color=always --group-directories-first --icons --sort=extension --git --git-ignore'     # long format
+alias ls='exa -l --color=always --group-directories-first --icons --sort=extension --git --git-ignore'     # long format
 alias lt='exa -aT --color=always --group-directories-first --icons --sort=extension --ignore-glob=".git" --git --git-ignore'    # tree listing
 alias l.="exa -a --sort=extension | egrep '^\.'"        
 
@@ -62,6 +63,8 @@ alias git-diff='git difftool --tool=nvimdiff'
 alias vi-alias="vim ~/.local/dotfile/files/.config/zsh/alias.zsh"
 alias clean='latexmk -c && rm **.synctex.gz'
 alias s="kitty +kitten ssh"
+alias nvi="env -u WAYLAND_DISPLAY neovide"
+
 
 # shorten commands
 alias mirror="sudo reflector -f 30 -l 30 --number 10 --verbose --save /etc/pacman.d/mirrorlist"
