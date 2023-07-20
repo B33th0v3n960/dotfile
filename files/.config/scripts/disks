@@ -1,2 +1,2 @@
-udisksctl mount -b /dev/sda1 &
-udisksctl mount -b /dev/nvme0n1p5 &
+sudo mount /dev/sda1 /home/b33th0v3n/Media/internal-hdd && \ 
+sudo mount /dev/nvme0n1p5 /home/b33th0v3n/Media/windows &

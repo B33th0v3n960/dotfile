@@ -31,19 +31,19 @@ alias down="cd ~/Downloads/"
 alias trash="cd /.local/share/Trash"
 alias dotfile='cd ~/.local/dotfile/'
 
-alias work='cd ~/Documents/work/'
+alias work='cd ~/Desktop/work/'
 alias code="cd ~/Desktop/code/"
 alias chess='cd ~/Desktop/code/chess-tournament-sorting/'
 alias note='cd ~/Documents/notes/'
 
 # external media
-alias media="cd /media/"
-alias sd="cd /media/sd/"
-alias ihdd="cd /media/internal-hdd/files/"
-alias ehdd="cd /media/external-hdd/files/"
-alias usb="cd /media/usb/files/"
-alias windows="cd /media/windows/"
-alias other="cd /media/internal-hdd/files/Others/"
+alias media="cd ~/Media/"
+alias sd="cd ~/Media/sd/"
+alias ihdd="cd ~/Media/internal-hdd/files/"
+alias ehdd="cd ~/Media/external-hdd/files/"
+alias usb="cd ~/Media/usb/files/"
+alias windows="cd ~/Media/windows/"
+alias other="cd ~/Media/internal-hdd/files/others/"
 
 # applications
 alias view="nsxiv"
@@ -69,7 +69,7 @@ alias nvi="env -u WAYLAND_DISPLAY neovide"
 # shorten commands
 alias mirror="sudo reflector -f 30 -l 30 --number 10 --verbose --save /etc/pacman.d/mirrorlist"
 alias ip='ip -color'
-alias grubup="sudo update-grub"
+alias grubup="sudo grub-mkconfig -o /boot/grub/grub.cfg"
 
 alias dir='dir --color=auto'
 alias vdir='vdir --color=auto'
